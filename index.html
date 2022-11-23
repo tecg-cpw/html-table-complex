@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="description"
+              content="quelques exemples de tables plus complexes ">
+        <meta name="keywords"
+              content="html, tables, rowspan, colspan">
+        <meta name="author"
+              content="tecg-cpw">
+        <title>Tables HTML complexes</title>
+        <link rel="stylesheet"
+              href="./css/styles.css">
+    </head>
+    <body>
+        <h1>Les tables complexes</h1>
+        <section>
+            <h2>Un tableau avec trois niveaux d’entêtes</h2>
+            <table>
+                <caption>Disponibilité des chambres</caption>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <th scope="col">Studio</th>
+                        <th scope="col"><abbr title="Appartement">Apt.</abbr></th>
+                        <th scope="col">Chalet</th>
+                        <th scope="col">Villa</th>
+                    </tr>
+                    <tr>
+                        <th colspan="5"
+                            scope="rowgroup">Paris
+                        </th>
+                    </tr>
+                    <tr>
+                        <th scope="row">1 chambre</th>
+                        <td>11</td>
+                        <td>20</td>
+                        <td>25</td>
+                        <td>23</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2 chambres</th>
+                        <td><abbr title="Non disponible">-</abbr></td>
+                        <td>43</td>
+                        <td>52</td>
+                        <td>32</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3 chambres</th>
+                        <td><abbr title="Non disponible">-</abbr></td>
+                        <td>13</td>
+                        <td>15</td>
+                        <td>40</td>
+                    </tr>
+                    <tr>
+                        <th colspan="5"
+                            scope="rowgroup">Rome
+                        </th>
+                    </tr>
+                    <tr>
+                        <th scope="row">1 chambre</th>
+                        <td>13</td>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2 chambres</th>
+                        <td><abbr title="Non disponible">-</abbr></td>
+                        <td>23</td>
+                        <td>43</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3 chambres</th>
+                        <td><abbr title="Non disponible">-</abbr></td>
+                        <td>16</td>
+                        <td>32</td>
+                        <td>40</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>Un tableau avec des entêtes irrégulières</h2>
+            <table lang="en">
+                <caption>Our posters</caption>
+                <tbody>
+                    <tr>
+                        <th id="tbl6">Poster</th>
+                        <th id="tbl7">Color</th>
+                        <th colspan="3"
+                            id="tbl8">Sizes
+                        </th>
+                    </tr>
+                    <tr>
+                        <th rowspan="3"
+                            id="tbl11"
+                            headers="tbl6">Zodiac
+                        </th>
+                        <th id="tbl12"
+                            headers="tbl7 tbl11">Full Color
+                        </th>
+                        <td headers="tbl8 tbl11 tbl12">A2</td>
+                        <td headers="tbl8 tbl11 tbl12">A3</td>
+                        <td headers="tbl8 tbl11 tbl12">A4</td>
+                    </tr>
+                    <tr>
+                        <th id="tbl26"
+                            headers="tbl7">Black and White
+                        </th>
+                        <td headers="tbl8 tbl11 tbl26">A1</td>
+                        <td headers="tbl8 tbl11 tbl26">A2</td>
+                        <td headers="tbl8 tbl11 tbl26">A3</td>
+                    </tr>
+                    <tr>
+                        <th id="tbl33"
+                            headers="tbl7">Sepia
+                        </th>
+                        <td headers="tbl8 tbl11 tbl33">A3</td>
+                        <td headers="tbl8 tbl11 tbl33">A4</td>
+                        <td headers="tbl8 tbl11 tbl33">A5</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2"
+                            id="tbl40"
+                            headers="tbl6">Angels
+                        </th>
+                        <th id="tbl41"
+                            headers="tbl7 tbl40">Black and White
+                        </th>
+                        <td headers="tbl8 tbl40 tbl41">A1</td>
+                        <td headers="tbl8 tbl40 tbl41">A3</td>
+                        <td headers="tbl8 tbl40 tbl41">A4</td>
+                    </tr>
+                    <tr>
+                        <th id="tbl48"
+                            headers="tbl7">Sepia
+                        </th>
+                        <td headers="tbl8 tbl40 tbl48">A2</td>
+                        <td headers="tbl8 tbl40 tbl48">A3</td>
+                        <td headers="tbl8 tbl40 tbl48">A5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </body>
+</html>
