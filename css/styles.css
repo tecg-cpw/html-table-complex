@@ -370,6 +370,10 @@ td, th {
     text-align: center;
 }
 
+tr:nth-child(even){
+    background-color: rgb(0,0,0,0.05);
+}
+
 th {
     text-transform: uppercase;
     background-color: rgba(0, 0, 0, .2);
@@ -377,4 +381,26 @@ th {
 
 table {
     border-spacing: 0;
+}
+
+caption{
+    font-size: 1.2rem;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color:white;
+    background-color: rgba(0,0,0,.8);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    width: 50vw;
+}
+
+section{
+    margin-bottom: 10rem;
+}
+
+h2 {
+    font-weight: normal;
+    text-align: right;
+    color: rgba(0,0,0,.8);
 }
